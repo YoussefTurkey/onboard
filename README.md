@@ -16,3 +16,5 @@
 * Yarn
 #### Version control system
 * Git
+#### Website icons
+* React-Icons

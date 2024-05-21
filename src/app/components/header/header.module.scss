@@ -1,0 +1,17 @@
+
+@media (max-width: 639px) {
+    .logo{
+        display: none;
+    }
+}
+
+.div_icon{
+    &:hover{
+        .icon{
+            color: #fff;
+        }
+    }
+    .icon{
+        font-size: 24px;
+    }
+}
