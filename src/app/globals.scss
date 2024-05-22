@@ -6,10 +6,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    // @apply transition-colors duration-200
 }
 html{
     scroll-behavior: smooth;
 }
 img{
     max-width: 100%;
+}
+.light{
+    background-color: #fff;
+}
+.dark{
+    background-color: #111;
 }

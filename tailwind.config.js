@@ -17,8 +17,13 @@ module.exports = {
         secondary: '#666666',
         bgHover: '#eee',
         txtHover: 'rgb(181 21 51 / 23%)',
+        darkPrimary: '#111',
+        darkSecondary: '#2D9CDB',
+        darkBgHover: '#2B2A2A',
+        darkTxtHover: 'rgb(45 156 219 / 32%)' 
       }
     },
   },
   plugins: [],
+  darkMode: 'class'
 };

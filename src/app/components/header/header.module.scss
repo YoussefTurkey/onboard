@@ -1,10 +1,4 @@
 
-@media (max-width: 639px) {
-    .logo{
-        display: none;
-    }
-}
-
 .div_icon{
     &:hover{
         .icon{
@@ -13,5 +7,23 @@
     }
     .icon{
         font-size: 24px;
+    }
+}
+
+// small screens and media queries
+@media screen and (max-width: 767px) {
+    .icon_colors, .palete{
+        flex-direction: column;
+    }
+}
+@media (max-width: 639px) {
+    .logo{
+        display: none;
+    }
+    .palete{
+        margin-top: -25px;
+        padding-top: 25px;
+        border-bottom-left-radius: 35px;
+        border-bottom-right-radius: 35px;
     }
 }
