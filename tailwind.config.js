@@ -21,6 +21,9 @@ module.exports = {
         darkSecondary: '#2D9CDB',
         darkBgHover: '#2B2A2A',
         darkTxtHover: 'rgb(45 156 219 / 32%)' 
+      },
+      width:{
+        1130: '1130px',
       }
     },
   },

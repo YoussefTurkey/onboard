@@ -1,0 +1,23 @@
+@media (max-width: 1130px){
+    .footer{
+        width: 90%;
+    }
+}
+@media (max-width: 767px){
+    .footer{
+        img{
+            width: 30%;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+}
+@media screen and (max-width: 320px) {
+    .footer{
+        padding: 1.5rem 0;
+        p{
+            font-size: 12px;
+        }
+    }
+}

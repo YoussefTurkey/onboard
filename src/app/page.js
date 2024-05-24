@@ -1,4 +1,5 @@
 "use client";
+import Footer from "./components/footer/Footer";
 // importing main components
 import Header from "./components/header/Header";
 // improting Hoocks
@@ -15,6 +16,7 @@ export default function Home() {
   return (
     <main className={ darkMode ? "light" : 'dark'}>
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+      <Footer />
     </main>
   );
 }
