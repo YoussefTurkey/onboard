@@ -5,8 +5,6 @@ import Image from "next/image";
 import { useState } from "react";
 // importing header style
 import styles from "./header.module.scss";
-// importing SVG
-import { Logo } from "../../../../public/images/components/svg";
 // improting icons from React-icons
 import { IoColorPaletteOutline } from "react-icons/io5";
 import { IoMoonOutline, IoSunny } from "react-icons/io5";
@@ -44,7 +42,7 @@ const Header = ({ darkMode, toggleDarkMode }) => {
 
         {colorPalete ? (
           <div
-            className={`bg-bgHover sm:rounded-bl-full md:rounded-bl-none md:rounded-tr-full rounded-br-full flex items-center justify-between sm:mt-[-25px] sm:pt-[25px] md:mt-0 md:pt-0 md:ml-[-25px] md:pl-[25px] ${styles.palete}`}
+            className={`bg-bgHover sm:rounded-bl-full md:rounded-bl-none md:rounded-tr-full sm:rounded-br-full flex items-center justify-between sm:mt-[-25px] sm:pt-[25px] md:mt-0 md:pt-0 md:ml-[-25px] md:pl-[25px] ${styles.palete}`}
           >
             <div
               onClick={() => {
@@ -114,7 +112,6 @@ const Header = ({ darkMode, toggleDarkMode }) => {
           alt="logo"
           loading="lazy"
         />
-        {/* <Logo /> */}
       </Link>
 
       <div
