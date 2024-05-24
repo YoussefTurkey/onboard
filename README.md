@@ -18,3 +18,4 @@
 * Git
 #### Website icons
 * React-Icons
+* @svgr/webpack

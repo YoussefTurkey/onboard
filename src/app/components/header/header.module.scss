@@ -9,14 +9,23 @@
         font-size: 24px;
     }
 }
+.palete{
+    animation: FadeInLarge 0.2s ease forwards;
+}
 
 // small screens and media queries
 @media screen and (max-width: 767px) {
     .icon_colors, .palete{
         flex-direction: column;
     }
+    .palete{
+        animation: FadeInSmall 0.2s ease forwards;
+    }
 }
 @media (max-width: 639px) {
+    .header{
+        align-items: flex-start;
+    }
     .logo{
         display: none;
     }
@@ -26,4 +35,26 @@
         border-bottom-left-radius: 35px;
         border-bottom-right-radius: 35px;
     }
+}
+// animation for largeScreens
+@keyframes FadeInLarge {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+}
+// animation for smallScreen
+@keyframes FadeInSmall {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
 }

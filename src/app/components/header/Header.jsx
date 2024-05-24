@@ -5,6 +5,8 @@ import Image from "next/image";
 import { useState } from "react";
 // importing header style
 import styles from "./header.module.scss";
+// importing SVG
+import { Logo } from "../../../../public/images/components/svg";
 // improting icons from React-icons
 import { IoColorPaletteOutline } from "react-icons/io5";
 import { IoMoonOutline, IoSunny } from "react-icons/io5";
@@ -19,7 +21,7 @@ const Header = ({ darkMode, toggleDarkMode }) => {
 
   return (
     <header
-      className={`header flex justify-between sm:items-start md:items-center mx-auto p-6 container `}
+      className={`${styles.header} flex justify-between sm:items-start md:items-center mx-auto p-6 container `}
     >
       <div className={`${styles.icon_colors} flex items-center`}>
         <div
@@ -112,6 +114,7 @@ const Header = ({ darkMode, toggleDarkMode }) => {
           alt="logo"
           loading="lazy"
         />
+        {/* <Logo /> */}
       </Link>
 
       <div
@@ -122,9 +125,9 @@ const Header = ({ darkMode, toggleDarkMode }) => {
         className={`${styles.div_icon} bg-bgHover p-4 rounded-full hover:bg-primary dark:hover:bg-darkSecondary transition-all cursor-pointer`}
       >
         {darkMode ? (
-          <IoSunny className={`${styles.icon} text-secondary`} />
-        ) : (
           <IoMoonOutline className={`${styles.icon} text-secondary`} />
+          ) : (
+          <IoSunny className={`${styles.icon} text-secondary`} />
         )}
       </div>
     </header>
