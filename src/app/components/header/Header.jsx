@@ -104,8 +104,8 @@ const Header = ({ darkMode, toggleDarkMode }) => {
         <Image
           src={
             logo
-              ? "/images/photos/logo-text.png"
-              : "/images/photos/logo-text2.png"
+              ? "/images/photos/logo-text2.png"
+              : "/images/photos/logo-text.png"
           }
           width={200}
           height={200}

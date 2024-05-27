@@ -1,6 +1,6 @@
 "use client";
 // improting Hoocks
-import { useState } from "react";
+import { useState, useEffect } from "react";
 // importing main components
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
@@ -16,12 +16,26 @@ const ubuntu = Ubuntu({
   weight: ["300", "400", "500", "700"],
 });
 
-
 export default function RootLayout({ children }) {
-  // dark-mode
-  const [darkMode, setDarkMode] = useState("dark");
+  // Initialize darkMode state based on localStorage or default to true
+  const [darkMode, setDarkMode] = useState(() => {
+    if (typeof window !== "undefined") {
+      return localStorage.getItem("theme") === "dark";
+    }
+    return true; // Default to dark mode
+  });
+
+  // Effect to update localStorage when darkMode changes
+  useEffect(() => {
+    if (darkMode) {
+      localStorage.setItem("theme", "dark");
+    } else {
+      localStorage.setItem("theme", "light");
+    }
+  }, [darkMode]);
+
   const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
+    setDarkMode((prevMode) => !prevMode);
   };
 
   return (
@@ -38,7 +52,7 @@ export default function RootLayout({ children }) {
         <meta name="author" content="Youssef Turkey" />
       </Head>
       <body
-        className={`${ubuntu.className} ${darkMode ? "light" : "dark"}`}
+        className={`${ubuntu.className} ${darkMode ? "dark" : "light"}`}
         suppressHydrationWarning={true}
       >
         <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
