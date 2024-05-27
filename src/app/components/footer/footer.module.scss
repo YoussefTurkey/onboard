@@ -1,24 +1,36 @@
-@media screen and (max-width: 1132px){
-    .footer{
-        width: 90%;
-    }
+.footer {
+  > img {
+    width: 10%;
+    margin: 0 auto;
+  }
 }
 
-@media screen and (max-width: 767px){
-    .footer{
-        img{
-            width: 30%;
-        }
-        p{
-            font-size: 14px;
-        }
+@media (max-width: 1154px) and (min-width: 1024px) {
+  .footer {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1132px) {
+  .footer {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    img {
+      width: 30%;
     }
+    p {
+      font-size: 14px;
+    }
+  }
 }
 @media screen and (max-width: 320px) {
-    .footer{
-        padding: 1.5rem 0;
-        p{
-            font-size: 12px;
-        }
+  .footer {
+    padding: 1.5rem 0;
+    p {
+      font-size: 12px;
     }
+  }
 }

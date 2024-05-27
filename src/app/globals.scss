@@ -13,12 +13,15 @@ html {
 }
 img {
   max-width: 100%;
+  width: auto;
 }
 .light {
   background-color: #fff;
+  color: #111;
 }
 .dark {
   background-color: #111;
+  color: #fff;
 }
 
 @media (prefers-color-scheme: dark) {
