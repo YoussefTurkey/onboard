@@ -9,6 +9,7 @@ import styles from "./header.module.scss";
 import { IoColorPaletteOutline } from "react-icons/io5";
 import { IoMoonOutline, IoSunny } from "react-icons/io5";
 import Link from "next/link";
+import LogoSVG from "../../../../public/images/icons/Logo";
 
 const Header = ({ darkMode, toggleDarkMode }) => {
   // color-palate
@@ -101,17 +102,7 @@ const Header = ({ darkMode, toggleDarkMode }) => {
         href={"/"}
         className={`${styles.logo} sm:hidden md:block cursor-pointer`}
       >
-        <Image
-          src={
-            logo
-              ? "/images/photos/logo-text2.png"
-              : "/images/photos/logo-text.png"
-          }
-          width={200}
-          height={200}
-          alt="logo"
-          loading="lazy"
-        />
+        <LogoSVG logo={logo} />
       </Link>
 
       <div
@@ -123,7 +114,7 @@ const Header = ({ darkMode, toggleDarkMode }) => {
       >
         {darkMode ? (
           <IoMoonOutline className={`${styles.icon} text-secondary`} />
-          ) : (
+        ) : (
           <IoSunny className={`${styles.icon} text-secondary`} />
         )}
       </div>
