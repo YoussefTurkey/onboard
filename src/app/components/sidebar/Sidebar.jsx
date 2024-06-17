@@ -13,7 +13,7 @@ import { FaBookOpen } from "react-icons/fa6";
 const Sidebar = () => {
   return (
     <aside className={`${styles.sidebarScreen} w-1130`}>
-      <div className="fixed right-[11.5%] translate-x-[50%]">
+      <div className="fixed top-[25%] right-[11.5%] translate-x-[50%]">
         <Link href={"#"} className="my-5 block">
           <CiHome className={`bg-bgHover p-3 rounded-full hover:bg-primary hover:text-white text-secondary text-[55px] transition-all cursor-pointer`}/>
         </Link>

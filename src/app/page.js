@@ -1,11 +1,13 @@
 // importing components
-import LandPage from "./(pages)/elements/landPage/page";
+import Bio from "./(pages)/bio/page";
+import Landing from "./(pages)/landing/page";
 
 export default function Home() {
   return (
     <main className='min-h-screen'>
       <section>
-        <LandPage />
+        <Landing />
+        <Bio />
       </section>
     </main>
   );

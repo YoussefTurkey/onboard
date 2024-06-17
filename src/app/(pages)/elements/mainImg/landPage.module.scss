@@ -2,11 +2,11 @@
     display: flex;
     justify-content: center;
     align-items:center;
-    height: calc(100vh - 256.06px);
+    height: calc(100vh - 341px);
     .img{
         position: absolute;
-        top: 48.7%;
-        left: 51%;
+        top: 44.5%;
+        left: 51.5%;
         transform: translate(-50%, -50%);
     }
 }
@@ -29,8 +29,8 @@
         }
         .img{
             width: 270px;
-            top: 46%;
-            left: 52%;
+            top: 42.5%;
+            left: 52.5%;
         }
     }
 }
