@@ -1,20 +1,20 @@
+'use client'
 // importing style
 import styles from "./landPage.module.scss";
 // importing SVG components
 import MainImage from "../../../../../public/images/photos/main-image";
-// importing custome hooks
-import { useTheme } from "@/app/elements/ThemeContext";
+// importing theme Redux
+import { useSelector } from 'react-redux';
 
 const LandPage = () => {
 
   // const {darkMode} = useTheme();
+  const darkMode = useSelector((state) => state.theme.darkMode);
+
 
   return (
-    // <section className={styles.landing}>
-    //   <MainImage darkMode={darkMode} />
-    // </section>
     <section className={styles.landing}>
-      <MainImage />
+      <MainImage darkMode={darkMode} />
     </section>
   )
 }

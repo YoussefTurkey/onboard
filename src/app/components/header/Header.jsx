@@ -4,8 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 // improting Hoocks
 import { useState } from "react";
-// improting Custom Hoocks
-import { useTheme } from "@/app/elements/ThemeContext";
+// importing theme Redux
+import { useDispatch, useSelector } from "react-redux";
+import { toggleDarkMode } from "@/app/redux/themeSlice";
 // importing header style
 import styles from "./header.module.scss";
 // improting icons from React-icons
@@ -18,10 +19,10 @@ const Header = () => {
   // color-palate
   const [colorPalete, setColorPalete] = useState(false);
   const [colorFocus, setColorFocus] = useState(false);
-  // change-logo
-  const [logo, setLogo] = useState("");
-
-  const { darkMode, toggleDarkMode } = useTheme();
+  
+  // const { darkMode, toggleDarkMode } = useTheme();
+  const dispatch = useDispatch();
+  const darkMode = useSelector( state => state.theme.darkMode)
 
   return (
     <header
@@ -108,7 +109,7 @@ const Header = () => {
       </Link>
 
       <div
-        onClick={toggleDarkMode}
+        onClick={() => dispatch(toggleDarkMode())}
         className={`${styles.div_icon} p-4 rounded-full transition-all cursor-pointer
         hover:bg-primary bg-bgHover`}
       >

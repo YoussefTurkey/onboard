@@ -8,8 +8,9 @@ import "./globals.scss";
 // importing Google-Fonts
 import { Ubuntu } from "next/font/google";
 import Head from "next/head";
-// importing custom hooks
-import ThemeProvider from "@/app/elements/ThemeContext";
+// importing theme Redux
+import { Provider } from "react-redux";
+import { store } from "./redux/store";
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
@@ -19,7 +20,7 @@ const ubuntu = Ubuntu({
 export default function RootLayout({ children }) {
 
   return (
-    <ThemeProvider>
+    <Provider store={store}>
       <html lang="en">
         <Head>
           <title>YouTurkey11 | Portfolio</title>
@@ -42,6 +43,6 @@ export default function RootLayout({ children }) {
           <Footer />
         </body>
       </html>
-    </ThemeProvider>
+    </Provider>
   );
 }
