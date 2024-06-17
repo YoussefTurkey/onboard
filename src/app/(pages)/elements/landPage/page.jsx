@@ -1,4 +1,6 @@
 'use client'
+// importing React Components 
+import Image from "next/image";
 // importing style
 import styles from "./landPage.module.scss";
 // importing SVG components
@@ -14,7 +16,10 @@ const LandPage = () => {
 
   return (
     <section className={styles.landing}>
-      <MainImage darkMode={darkMode} />
+      <div>
+        <MainImage darkMode={darkMode} className={styles.circle} />
+        <Image src='/images/photos/person.png' width='300' height='300' alt='person' loading='lazy' className={styles.img} />
+      </div>
     </section>
   )
 }

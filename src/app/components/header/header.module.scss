@@ -1,4 +1,5 @@
 .div_icon{
+    position: relative;
     &:hover{
         .icon{
             color: #fff;
@@ -16,15 +17,30 @@
 }
 .palete{
     animation: FadeInLarge 0.2s ease forwards;
+    position: absolute;
+    left: 13%;
+    z-index: 1;
 }
 
 // small screens and media queries
+@media screen and (max-width: 1440px) {
+    .palete{
+        left: 11%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .palete{
+        left: 8%;
+    }
+}
 @media screen and (max-width: 767px) {
     .icon_colors, .palete{
         flex-direction: column;
     }
     .palete{
         animation: FadeInSmall 0.2s ease forwards;
+        top: 14%;
+        left: 11.5%;
     }
 }
 @media (max-width: 639px) {
@@ -39,6 +55,7 @@
         padding-top: 25px;
         border-bottom-left-radius: 35px;
         border-bottom-right-radius: 35px;
+        left: 6%;
     }
 }
 // animation for largeScreens

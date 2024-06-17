@@ -3,4 +3,34 @@
     justify-content: center;
     align-items:center;
     height: calc(100vh - 256.06px);
+    .img{
+        position: absolute;
+        top: 48.7%;
+        left: 51%;
+        transform: translate(-50%, -50%);
+    }
+}
+@media screen and (max-width: 767px) {
+    .landing{
+        svg{
+            width: 350px;
+        }
+        .img{
+            width: 320px;
+            top: 45.5%;
+            left: 51.5%;
+        }
+    }
+}
+@media screen and (max-width: 425px) {
+    .landing{
+        svg{
+            width: 300px;
+        }
+        .img{
+            width: 270px;
+            top: 46%;
+            left: 52%;
+        }
+    }
 }

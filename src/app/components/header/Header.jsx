@@ -34,7 +34,7 @@ const Header = () => {
             setColorPalete(!colorPalete);
             setColorFocus(!colorFocus);
           }}
-          className={`${styles.div_icon} p-4 rounded-full transition-all cursor-pointer z-[1]  
+          className={`${styles.div_icon} p-4 rounded-full transition-all cursor-pointer z-[10]  
           ${colorFocus ? 'bg-primary' : 'hover:bg-primary bg-bgHover'}`}
         >
           <IoColorPaletteOutline
