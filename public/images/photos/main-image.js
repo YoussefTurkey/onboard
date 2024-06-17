@@ -1,6 +1,6 @@
 import React from "react";
 
-const MainImage = ({logo}) => {
+const MainImage = ({darkMode}) => {
   return (
     <svg
       width="450"
@@ -10,7 +10,7 @@ const MainImage = ({logo}) => {
       xmlns="http://www.w3.org/2000/svg"
       className={'mx-auto'}
     >
-      <circle cx="297.26" cy="297.26" r="297.26" fill={logo ? '#B51533' : '#2D9CDB'} />
+      <circle cx="297.26" cy="297.26" r="297.26" fill={darkMode ? '#2D9CDB' : '#B51533'} />
     </svg>
   );
 };

@@ -13,14 +13,10 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        primary: '#B51533',
-        secondary: '#666666',
-        bgHover: '#eee',
-        txtHover: 'rgb(181 21 51 / 23%)',
-        darkPrimary: '#111',
-        darkSecondary: '#2D9CDB',
-        darkBgHover: '#2B2A2A',
-        darkTxtHover: 'rgb(45 156 219 / 32%)' 
+        primary: 'var(--primary)',
+        secondary: 'var(--secondary)',
+        bgHover: 'var(--bgHover)',
+        txtHover: 'rgb(var(--txtHover))'
       },
       width:{
         1130: '1130px',

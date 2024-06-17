@@ -2,12 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  // @apply transition-colors duration-200
 }
+
+@layer base {
+  body {
+    --bg-color: #fff;
+    --text-color: #111;
+    --primary: #b51533;
+    --secondary: #666;
+    --bgHover: #eee;
+    --txtHover: 181 21 51 / 23%;
+  }
+  @media (prefers-color-scheme: dark) {
+    body.dark-mode{
+        --bg-color: #111;
+        --text-color: #fff;
+        --primary: #2d9cdb;
+        --secondary: #eee;
+        --bgHover: #2b2a2a;
+        --txtHover: 45 156 219 / 32%;
+      }
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -15,17 +36,7 @@ img {
   max-width: 100%;
   width: auto;
 }
-.light {
-  background-color: #fff;
-  color: #111;
-}
-.dark {
-  background-color: #111;
-  color: #fff;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #111;
-  }
+.dark-mode {
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }

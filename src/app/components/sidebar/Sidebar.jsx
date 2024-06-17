@@ -12,28 +12,28 @@ import { FaBookOpen } from "react-icons/fa6";
 
 const Sidebar = () => {
   return (
-    <section className={`${styles.sidebar} w-1130`}>
-      <div className="fixed top-[25%] right-0 mx-[10.4%]">
-      <Link href={"#"} className="my-5 block">
-        <CiHome className="bg-bgHover p-4 rounded-full hover:bg-primary dark:hover:bg-darkSecondary text-secondary hover:text-white dark:hover:text-white text-[60px] transition-all cursor-pointer"/>
-      </Link>
-      <Link href={"#bio"} className="my-5 block">
-        <FaUser className="bg-bgHover p-4 rounded-full hover:bg-primary dark:hover:bg-darkSecondary text-secondary hover:text-white dark:hover:text-white text-[60px] transition-all cursor-pointer"/>
-      </Link>
-      <Link href={"#skills"} className="my-5 block">
-        <HiLightBulb className="bg-bgHover p-4 rounded-full hover:bg-primary dark:hover:bg-darkSecondary text-secondary hover:text-white dark:hover:text-white text-[60px] transition-all cursor-pointer"/>
-      </Link>
-      <Link href={"#projects"} className="my-5 block">
-        <MdCardTravel className="bg-bgHover p-4 rounded-full hover:bg-primary dark:hover:bg-darkSecondary text-secondary hover:text-white dark:hover:text-white text-[60px] transition-all cursor-pointer"/>
-      </Link>
-      <Link href={"#contact"} className="my-5 block">
-        <AiFillMessage className="bg-bgHover p-4 rounded-full hover:bg-primary dark:hover:bg-darkSecondary text-secondary hover:text-white dark:hover:text-white text-[60px] transition-all cursor-pointer"/>
-      </Link>
-      <Link href={"#blog"} className="my-5 block">
-        <FaBookOpen className="bg-bgHover p-4 rounded-full hover:bg-primary dark:hover:bg-darkSecondary text-secondary hover:text-white dark:hover:text-white text-[60px] transition-all cursor-pointer"/>
-      </Link>
+    <aside className={`${styles.sidebarScreen} w-1130`}>
+      <div className="fixed right-[11.5%] translate-x-[50%]">
+        <Link href={"#"} className="my-5 block">
+          <CiHome className={`bg-bgHover p-3 rounded-full hover:bg-primary hover:text-white text-secondary text-[55px] transition-all cursor-pointer`}/>
+        </Link>
+        <Link href={"#bio"} className="my-5 block">
+          <FaUser className={`bg-bgHover p-3 rounded-full hover:bg-primary hover:text-white text-secondary text-[55px] transition-all cursor-pointer`}/>
+        </Link>
+        <Link href={"#skills"} className="my-5 block">
+          <HiLightBulb className={`bg-bgHover p-3 rounded-full hover:bg-primary hover:text-white text-secondary text-[55px] transition-all cursor-pointer`}/>
+        </Link>
+        <Link href={"#projects"} className="my-5 block">
+          <MdCardTravel className={`bg-bgHover p-3 rounded-full hover:bg-primary hover:text-white text-secondary text-[55px] transition-all cursor-pointer`}/>
+        </Link>
+        <Link href={"#contact"} className="my-5 block">
+          <AiFillMessage className={`bg-bgHover p-3 rounded-full hover:bg-primary hover:text-white text-secondary text-[55px] transition-all cursor-pointer`}/>
+        </Link>
+        <Link href={"#blog"} className="my-5 block">
+          <FaBookOpen className={`bg-bgHover p-3 rounded-full hover:bg-primary hover:text-white text-secondary text-[55px] transition-all cursor-pointer`}/>
+        </Link>
       </div>
-    </section>
+    </aside>
   );
 };
 
