@@ -1,0 +1,15 @@
+.btn{
+    border: 2px solid var(--primary);
+    &:hover{
+        border: 2px solid var(--bg-color);
+        span{
+            color: #fff;
+        }
+        .arrow{
+            border: 2px solid #fff;
+        }
+    }
+    .arrow{
+        border: 2px solid var(--primary);
+    }
+}

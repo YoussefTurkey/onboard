@@ -16,7 +16,9 @@ module.exports = {
         primary: 'var(--primary)',
         secondary: 'var(--secondary)',
         bgHover: 'var(--bgHover)',
-        txtHover: 'rgb(var(--txtHover))'
+        txtHover: 'rgb(var(--txtHover))',
+        txtColor: 'var(--text-color)',
+        bgColor: 'var(--bg-color)'
       },
       width:{
         1130: '1130px',

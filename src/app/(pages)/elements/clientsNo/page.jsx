@@ -3,8 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 // importing style
 import styles from "./clientsNo.module.scss";
-// importing SVG
-import ArrowRight from "../../../../../public/images/icons/arrowR";
+// importing components
+import Btn from "@/app/components/buttons/Btn";
 
 const ClientsNumbers = () => {
   return (
@@ -20,10 +20,7 @@ const ClientsNumbers = () => {
             <Image src='/images/photos/client05.svg' width='50' height="50" alt='client05' loading='lazy' className="ml-[-1.3%]" />
         </div>
 
-        <Link href={'/'} className={`flex items-center w-fit border border-primary rounded-full`}>
-            <span className='pl-5'>Portfolio</span>
-            <span className='bg-primary px-5 py-4 rounded-full ml-3'><ArrowRight /></span>
-        </Link>
+        <Btn txt={'Portfolio'} />
     </section>
   )
 }
