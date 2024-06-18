@@ -1,0 +1,17 @@
+@media screen and (max-width: 1279px) {
+    .tool{
+        width: 180px;
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .tools{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width: 639px) {
+    .tools{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

@@ -13,7 +13,7 @@ import Link from "next/link";
 
 // section-data
 const data = {
-  bio: {
+  sectionData: {
     subTitle: 'Get to Know Me',
     title: 'Biography',
     content: [
@@ -30,7 +30,7 @@ const data = {
 
 const Bio = () => {
   return (
-    <section className={`mx-auto container flex flex-col items-center my-40`}>
+    <section className={`mx-auto container flex flex-col items-center my-40`} id='bio'>
       <Title data={data} />
       <div className={`${styles.socials} flex items-center`}>
         <Link href={"/"}>
