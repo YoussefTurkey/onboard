@@ -1,6 +1,7 @@
 // importing components
 import Bio from "./(pages)/bio/page";
 import Landing from "./(pages)/landing/page";
+import Portfolio from "./(pages)/portfolio/page";
 import Skills from "./(pages)/skills/page";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
         <Landing />
         <Bio />
         <Skills />
+        <Portfolio />
       </section>
     </main>
   );

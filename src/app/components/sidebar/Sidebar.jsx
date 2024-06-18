@@ -14,7 +14,7 @@ const Sidebar = () => {
   return (
     <aside className={`${styles.sidebarScreen} w-1130`}>
       <div className="fixed top-[25%] right-[11.5%] translate-x-[50%]">
-        <Link href={"/"} className="my-5 block">
+        <Link href={"#home"} className="my-5 block">
           <CiHome className={`bg-bgHover p-3 rounded-full hover:bg-primary hover:text-white text-secondary text-[55px] transition-all cursor-pointer`}/>
         </Link>
         <Link href={"#bio"} className="my-5 block">
@@ -23,7 +23,7 @@ const Sidebar = () => {
         <Link href={"#skills"} className="my-5 block">
           <HiLightBulb className={`bg-bgHover p-3 rounded-full hover:bg-primary hover:text-white text-secondary text-[55px] transition-all cursor-pointer`}/>
         </Link>
-        <Link href={"#projects"} className="my-5 block">
+        <Link href={"#portfolio"} className="my-5 block">
           <MdCardTravel className={`bg-bgHover p-3 rounded-full hover:bg-primary hover:text-white text-secondary text-[55px] transition-all cursor-pointer`}/>
         </Link>
         <Link href={"#contact"} className="my-5 block">

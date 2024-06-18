@@ -4,7 +4,7 @@ import LandPage from "../elements/mainImg/page"
 
 const Landing = () => {
   return (
-    <section>
+    <section id="#home">
         <LandPage />
         <ClientsNumbers />
       </section>
