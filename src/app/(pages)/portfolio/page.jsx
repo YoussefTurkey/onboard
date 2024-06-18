@@ -10,6 +10,7 @@ import Pricetags from "../../../../public/images/icons/pricetags";
 import View from "../../../../public/images/icons/tools/View";
 import GitHub2 from "../../../../public/images/icons/tools/GitHub2";
 import Behance from "../../../../public/images/icons/tools/Behance";
+import Btn from "@/app/components/buttons/Btn";
 
 // section-data
 const data = {
@@ -55,8 +56,9 @@ const card = data.sectionData.card;
 
 const Portfolio = () => {
   return (
-    <section className={`${styles.portfolio} mx-auto container`} id="portfolio">
+    <section className={`${styles.portfolio} mx-auto container flex flex-col items-center my-40`} id="portfolio">
       <Title data={data} />
+      
       {card.map((work) => {
         return (
           <div
@@ -97,6 +99,8 @@ const Portfolio = () => {
           </div>
         );
       })}
+
+      <Btn txt={'View All Projects'} />
     </section>
   );
 };
