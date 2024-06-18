@@ -1,0 +1,12 @@
+.msg{
+    position: relative;
+    &::after{
+        content: '';
+        background-image: url('/images/photos/msg.png');
+        width: 100%;
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+        transform: translate(-50%, -50%);
+    }
+}

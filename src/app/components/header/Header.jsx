@@ -114,9 +114,9 @@ const Header = () => {
         hover:bg-primary bg-bgHover`}
       >
         {darkMode ? (
-          <IoMoonOutline className={`${styles.icon} text-secondary`} />
-        ) : (
           <IoSunny className={`${styles.icon} text-secondary`} />
+          ) : (
+          <IoMoonOutline className={`${styles.icon} text-secondary`} />
         )}
       </div>
     </header>

@@ -7,6 +7,7 @@ import Sidebar from "./components/sidebar/Sidebar";
 import "./globals.scss";
 // importing Google-Fonts
 import { Ubuntu } from "next/font/google";
+// importing React components
 import Head from "next/head";
 // importing theme Redux
 import { Provider } from "react-redux";

@@ -63,7 +63,7 @@ const Portfolio = () => {
         return (
           <div
             key={work.id}
-            className={`${styles.cards} flex flex-col items-center gap-10 my-10`}
+            className={`${styles.cards} flex flex-col items-center gap-10 my-5`}
           >
             <div
               className={`${styles.card} ${work.style} w-[100%] lg:w-1130 rounded-2xl flex flex-col p-5`}

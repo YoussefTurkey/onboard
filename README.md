@@ -19,3 +19,5 @@
 #### Website icons
 * React-Icons
 * @svgr/webpack
+#### State Managment Libriray
+* Redux-Toolkit

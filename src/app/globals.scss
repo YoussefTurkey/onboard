@@ -36,7 +36,7 @@ img {
   max-width: 100%;
   width: auto;
 }
-.dark-mode {
+body.dark-mode {
   background-color: var(--bg-color);
   color: var(--text-color);
 }
