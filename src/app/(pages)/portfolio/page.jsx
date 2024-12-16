@@ -21,7 +21,7 @@ const data = {
       {
         id: 1,
         style: "bg-[#7FBFFF]",
-        img: "/images/photos/JamRaise.png",
+        img: "/images/photos/JamRaise.webp",
         subTitle: "Graphic Design",
         title: "JamRaise",
         code: "",
@@ -31,7 +31,7 @@ const data = {
       {
         id: 2,
         style: "bg-[#515151]",
-        img: "/images/photos/Spiderman.png",
+        img: "/images/photos/Spiderman.webp",
         subTitle: "Web Development",
         title: "Spiderman Website",
         code: "https://github.com/YoussefTurkey/Spider-Man",
@@ -41,7 +41,7 @@ const data = {
       {
         id: 3,
         style: "bg-[#3E5463]",
-        img: "/images/photos/Justin.png",
+        img: "/images/photos/Justin.webp",
         subTitle: "Graphic Design",
         title: "Coach Youssef Justin",
         code: "",
@@ -63,7 +63,7 @@ const Portfolio = () => {
         return (
           <div
             key={work.id}
-            className={`${styles.cards} flex flex-col items-center gap-10 my-5`}
+            className={`${styles.cards} flex flex-col items-center gap-10 my-5 md:w-[80%] w-[100%]`}
           >
             <div
               className={`${styles.card} ${work.style} w-[100%] lg:w-1130 rounded-2xl flex flex-col p-5`}

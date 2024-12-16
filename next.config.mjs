@@ -7,6 +7,10 @@ const nextConfig = {
       options: {
         native: true,
       },
+      images: {
+        formats: ["image/webp", "image/avif"], // دعم التنسيقات
+        // domains: ["example.com"], // إذا كنت تستخدم صورًا من نطاق خارجي
+      },
     },
   ],
 };

@@ -8,7 +8,7 @@ import Btn from "@/app/components/buttons/Btn";
 
 const ClientsNumbers = () => {
   return (
-    <section className={`${styles.clientsNo} pl-[200px]`}>
+    <section className={`${styles.clientsNo} md:pl-[30px] pl-[30px]`}>
         <h3 className='text-[26px] font-[700] text-primary'>110+</h3>
         <p className='text-[18px]'>Happy Clients</p>
 

@@ -5,19 +5,20 @@
     height: calc(100vh - 341px);
     .img{
         position: absolute;
-        top: 44.5%;
+        width: 385px;
+        top: 43.5%;
         left: 51.5%;
         transform: translate(-50%, -50%);
     }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .landing{
         svg{
-            width: 350px;
+            width: 270px;
         }
         .img{
-            width: 320px;
-            top: 45.5%;
+            width: 250px;
+            top: 42%;
             left: 51.5%;
         }
     }

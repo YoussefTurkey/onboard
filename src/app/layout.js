@@ -1,4 +1,5 @@
 "use client";
+import { useRef } from "react";
 // importing main components
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
@@ -19,6 +20,14 @@ const ubuntu = Ubuntu({
 });
 
 export default function RootLayout({ children }) {
+  
+  const headerRef = useRef(null);
+
+  const scrollToHeader = () => {
+    if (headerRef.current) {
+      headerRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
 
   return (
     <Provider store={store}>
@@ -35,11 +44,11 @@ export default function RootLayout({ children }) {
           <meta name="author" content="Youssef Turkey" />
         </Head>
         <body
-          className={`${ubuntu.className}`}
+          className={`${ubuntu.className} container mx-auto`}
           suppressHydrationWarning={true}
         >
-          <Header />
-          <Sidebar />
+          <Header headerRef={headerRef} />
+          <Sidebar scrollToHeader={scrollToHeader} />
           {children}
           <Footer />
         </body>

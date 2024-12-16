@@ -18,7 +18,7 @@ const LandPage = () => {
     <section className={styles.landing}>
       <div>
         <MainImage darkMode={darkMode} className={styles.circle} />
-        <Image src='/images/photos/person.png' width='300' height='300' alt='person' loading='lazy' className={styles.img} />
+        <Image src='/images/photos/person.webp' width='300' height='300' alt='person' loading='lazy' className={styles.img} />
       </div>
     </section>
   )

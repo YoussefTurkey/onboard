@@ -15,7 +15,7 @@ import { IoMoonOutline, IoSunny } from "react-icons/io5";
 // importing image logo
 import LogoSVG from "../../../../public/images/icons/Logo";
 
-const Header = () => {
+const Header = ({headerRef}) => {
   // color-palate
   const [colorPalete, setColorPalete] = useState(false);
   const [colorFocus, setColorFocus] = useState(false);
@@ -47,6 +47,7 @@ const Header = () => {
   return (
     <header
       className={`${styles.header} flex justify-between sm:items-start md:items-center mx-auto p-6 container`}
+      ref={headerRef} id='header'
     >
       <div className={`${styles.icon_colors} flex items-center`} ref={paletteRef}>
         <div
@@ -67,7 +68,7 @@ const Header = () => {
 
         {colorPalete ? (
           <div
-            className={`bg-bgHover sm:rounded-bl-full md:rounded-bl-none md:rounded-tr-full sm:rounded-br-full flex items-center justify-between sm:mt-[-25px] sm:pt-[25px] md:mt-0 md:pt-0 md:ml-[-25px] md:pl-[25px] ${styles.palete}`}
+            className={`bg-bgHover sm:rounded-bl-full md:rounded-bl-none md:rounded-tr-full sm:rounded-br-full flex items-center justify-between sm:mt-[-25px] sm:pt-[25px] md:mt-0 md:pt-0 md:ml-[-25px] md:pl-[40px] ${styles.palete}`}
           >
             <div
               onClick={() => {

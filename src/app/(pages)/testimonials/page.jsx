@@ -16,7 +16,7 @@ const data = {
         id: 1,
         message:
           "“ I recently had the pleasure of working with Youssef, and I have to say, his skills as a graphic designer are truly impressive. From start to finish, Youssef... ”",
-        img: "/images/photos/AhmedSaad.png",
+        img: "/images/photos/AhmedSaad.webp",
         name: "Ahmed Saad",
         postion: "CEO, Queue Pie",
         stars: <FullRating />
@@ -25,7 +25,7 @@ const data = {
         id: 2,
         message:
           "“ I recently had the pleasure of working with Turkey, a talented Front End Developer. From the very beginning, Turkey impressed me with their coding skills and... ”",
-        img: "/images/photos/HalaSalam.png",
+        img: "/images/photos/HalaSalam.webp",
         name: "Hala Salam",
         postion: "Entrepreneur",
         stars: <FourRating />
@@ -38,10 +38,10 @@ const message = data.sectionData.card
 
 const Testimonials = () => {
   return (
-    <section className={`${styles.testimonial} mx-auto container my-10 z-0`}>
+    <section className={`mx-auto container my-10`}>
       <Title data={data} />
 
-      <div className={`${styles.card} grid grid-col-1 sm:grid-cols-2 gap-5 my-5`}>
+      <div className={`grid grid-col-1 lg:grid-cols-2 gap-5 my-5 mx-auto w-[80%]`}>
         {
             message.map(msg => {
                 return(
