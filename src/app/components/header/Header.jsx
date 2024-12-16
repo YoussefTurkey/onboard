@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 // improting Hoocks
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 // importing theme Redux
 import { useDispatch, useSelector } from "react-redux";
 import { toggleDarkMode } from "@/app/redux/themeSlice";
@@ -19,18 +19,39 @@ const Header = () => {
   // color-palate
   const [colorPalete, setColorPalete] = useState(false);
   const [colorFocus, setColorFocus] = useState(false);
+
+  // Reference for color palette container
+  const paletteRef = useRef(null); 
   
   // const { darkMode, toggleDarkMode } = useTheme();
   const dispatch = useDispatch();
   const darkMode = useSelector( state => state.theme.darkMode)
 
+  // Close palette on outside click
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (paletteRef.current && !paletteRef.current.contains(event.target)) {
+        setColorPalete(false);
+        setColorFocus(false);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+
+    // Cleanup listener
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+
   return (
     <header
       className={`${styles.header} flex justify-between sm:items-start md:items-center mx-auto p-6 container`}
     >
-      <div className={`${styles.icon_colors} flex items-center`}>
+      <div className={`${styles.icon_colors} flex items-center`} ref={paletteRef}>
         <div
-          onClick={() => {
+          onClick={(e) => {
+            e.stopPropagation();
             setColorPalete(!colorPalete);
             setColorFocus(!colorFocus);
           }}
