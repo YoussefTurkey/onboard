@@ -29,7 +29,7 @@ const Sidebar = ({scrollToHeader}) => {
         <Link to="contact" smooth={true} duration={500} className="my-5 block">
           <AiFillMessage className={`bg-bgHover p-3 rounded-full hover:bg-primary hover:text-white text-secondary text-[55px] transition-all cursor-pointer`}/>
         </Link>
-        <Link to="blog" smooth={true} duration={500} className="my-5 block">
+        <Link to="blogs" smooth={true} duration={500} className="my-5 block">
           <FaBookOpen className={`bg-bgHover p-3 rounded-full hover:bg-primary hover:text-white text-secondary text-[55px] transition-all cursor-pointer`}/>
         </Link>
       </div>

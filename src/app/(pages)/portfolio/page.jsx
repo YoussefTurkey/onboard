@@ -5,12 +5,12 @@ import Link from "next/link";
 import styles from "./portfolio.module.scss";
 // importing components
 import Title from "@/app/components/title/title";
+import Btn from "@/app/components/buttons/Btn";
 // importing SVG
 import Pricetags from "../../../../public/images/icons/pricetags";
 import View from "../../../../public/images/icons/tools/View";
 import GitHub2 from "../../../../public/images/icons/tools/GitHub2";
 import Behance from "../../../../public/images/icons/tools/Behance";
-import Btn from "@/app/components/buttons/Btn";
 
 // section-data
 const data = {

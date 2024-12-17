@@ -1,5 +1,6 @@
 // importing components
 import Bio from "./(pages)/bio/page";
+import Blogs from "./(pages)/blogs/page";
 import Contact from "./(pages)/contact/page";
 import Landing from "./(pages)/landing/page";
 import Portfolio from "./(pages)/portfolio/page";
@@ -16,6 +17,7 @@ export default function Home() {
         <Portfolio />
         <Testimonials />
         <Contact />
+        <Blogs />
       </section>
     </main>
   );
