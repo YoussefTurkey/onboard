@@ -55,9 +55,20 @@
         padding-top: 25px;
         border-bottom-left-radius: 35px;
         border-bottom-right-radius: 35px;
-        left: 6.5%;
+        left: 5.9%;
     }
 }
+@media (max-width: 375px) {
+    .palete{
+        left: 6.7%;
+    }
+}
+@media (max-width: 320px) {
+    .palete{
+        left: 7.6%;
+    }
+}
+
 // animation for largeScreens
 @keyframes FadeInLarge {
     from {
