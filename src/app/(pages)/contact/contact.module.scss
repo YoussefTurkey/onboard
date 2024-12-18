@@ -1,17 +1,5 @@
-@media screen and (max-width: 1279px) {
-    .card{
-        width: 180px;
-        padding: 20px;
-    }
-}
-@media screen and (max-width: 1023px) {
-    .cards{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-@media screen and (max-width: 639px) {
-    .cards{
-        grid-template-columns: repeat(2, 1fr);
+@media (max-width: 768px) and (min-width: 426px) {
+    .expand{
+        grid-column: 2 span;
     }
 }
