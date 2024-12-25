@@ -1,11 +1,11 @@
 // importing components
-import Bio from "./(pages)/bio/page";
-import Blogs from "./(pages)/blogs/page";
-import Contact from "./(pages)/contact/page";
-import Landing from "./(pages)/landing/page";
-import Portfolio from "./(pages)/portfolio/page";
-import Skills from "./(pages)/skills/page";
-import Testimonials from "./(pages)/testimonials/page";
+import Bio from "./components/sectionComponents/bio/page";
+import Blogs from "./components/sectionComponents/blogs/page";
+import Contact from "./components/sectionComponents/contact/page";
+import Landing from "./components/sectionComponents/landing/page";
+import Portfolio from "./components/sectionComponents/portfolio/page";
+import Skills from "./components/sectionComponents/skills/page";
+import Testimonials from "./components/sectionComponents/testimonials/page";
 
 export default function Home() {
   return (

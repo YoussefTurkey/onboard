@@ -1,9 +1,10 @@
 "use client";
 import { useRef } from "react";
 // importing main components
-import Header from "./components/header/Header";
-import Footer from "./components/footer/Footer";
-import Sidebar from "./components/sidebar/Sidebar";
+// import Header from "./components/header/Header";
+import Header from "./components/mainComponents/header/Header";
+import Footer from "./components/mainComponents/footer/Footer";
+import Sidebar from "./components/mainComponents/sidebar/Sidebar";
 // importing Scss Files for styling
 import "./globals.scss";
 // importing Google-Fonts
