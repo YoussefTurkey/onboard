@@ -11,6 +11,8 @@
 #### Website style
 * SCSS/Sass
 * Tailwind CSS
+#### Website animation
+* Swiper.js
 #### Package manager
 * NPM
 * Yarn
