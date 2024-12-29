@@ -27,7 +27,6 @@ const ClientsNumbers = () => {
             <Image src='/images/photos/client02.svg' fetchPriority='low' width='50' height="50" alt='client02' loading='lazy' className="ml-[-1.3%]" />
             <Image src='/images/photos/client03.svg' fetchPriority='low' width='50' height="50" alt='client03' loading='lazy' className="ml-[-1.3%]" />
             <Image src='/images/photos/client04.svg' fetchPriority='low' width='50' height="50" alt='client04' loading='lazy' className="ml-[-1.3%]" />
-            {/* <Image src='/images/photos/client05.svg' fetchPriority='low' width='50' height="50" alt='client05' loading='lazy' className="ml-[-1.3%]" /> */}
             <button className="bg-bgHover w-[65px] h-[65px] rounded-full border border-bgColor ml-[-1.3%]" onClick={increment}><FaPlus className="text-txtColor mx-auto text-2xl" /></button>
         </div>
 
