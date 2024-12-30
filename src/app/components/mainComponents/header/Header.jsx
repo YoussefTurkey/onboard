@@ -135,7 +135,7 @@ const Header = ({headerRef}) => {
         <LogoSVG darkMode={darkMode} />
       </Link>
 
-      <div className={`${styles.div_icon} flex flex-col gap-10`}>
+      <div className={`${styles.div_icon}`}>
         <div
           onClick={() => dispatch(toggleDarkMode())}
           className={`p-4 rounded-full transition-all cursor-pointer
@@ -149,14 +149,10 @@ const Header = ({headerRef}) => {
         </div>
         <div
           onClick={() => dispatch(toggleSmallSidebar())}
-          className={`p-4 rounded-full transition-all cursor-pointer
-          hover:bg-primary bg-bgHover `}
+          className={`${styles.toggleBtn} p-4 rounded-full transition-all cursor-pointer
+          hover:bg-primary bg-bgHover hidden`}
         >
           <FaBars className={`${styles.icon} text-secondary`} />
-          {/* {isDivVisible && (
-            <div className="mt-4 p-2 bg-gray-600 rounded-md">
-            </div>
-          )} */}
         </div>
       </div>
     </header>

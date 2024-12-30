@@ -19,7 +19,7 @@ const SmallSidebar = ({scrollToHeader}) => {
   return(
     <>
         {isSmallSidebarVisible && (
-            <aside className={`${styles.sidebarSmallScreen} hidden`}>
+            <aside className={`${styles.sidebarSmallScreen} lg:hidden`}>
                 <div>
                     <Link rel='preload' to="header" smooth={true} duration={500} className="my-5 block" onClick={scrollToHeader}>
                         <CiHome className={`bg-bgHover p-3 rounded-full hover:bg-primary hover:text-white text-secondary text-[55px] transition-all cursor-pointer`}/>

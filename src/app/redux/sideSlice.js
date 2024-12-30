@@ -2,7 +2,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  isSmallSidebarVisible: false, // الحالة الافتراضية
+  isSmallSidebarVisible: true, // الحالة الافتراضية
 };
 
 const toggleSlice = createSlice({
