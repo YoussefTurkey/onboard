@@ -1,34 +1,6 @@
 @media screen and (max-width: 768px) {
     .sidebarScreen{
-        > div {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            right: 50%;
-            bottom: -65%;
-            > a{
-                margin: 0 15px;
-            }
-        }
+        display: none;
     }
 }
 
-@media screen and (max-width: 425px) {
-    .sidebarScreen{
-        > div {
-            > a{
-                margin: 0 5px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .sidebarScreen{
-        > div {
-            > a{
-                margin: 0 2.5px;
-            }
-        }
-    }
-}

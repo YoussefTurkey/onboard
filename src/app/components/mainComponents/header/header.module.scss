@@ -33,7 +33,7 @@
         left: 8%;
     }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .icon_colors, .palete{
         flex-direction: column;
     }
@@ -41,6 +41,9 @@
         animation: FadeInSmall 0.2s ease forwards;
         top: 14%;
         left: 11.5%;
+    }
+    .div_icon{
+        margin-right: 15%;
     }
 }
 @media (max-width: 639px) {

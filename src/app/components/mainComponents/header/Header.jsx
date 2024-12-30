@@ -7,11 +7,13 @@ import { useState, useEffect, useRef } from "react";
 // importing theme Redux
 import { useDispatch, useSelector } from "react-redux";
 import { toggleDarkMode } from "@/app/redux/themeSlice";
+import { toggleSmallSidebar } from '@/app/redux/sideSlice'
 // importing header style
 import styles from "./header.module.scss";
 // improting icons from React-icons
 import { IoColorPaletteOutline } from "react-icons/io5";
 import { IoMoonOutline, IoSunny } from "react-icons/io5";
+import { FaBars } from "react-icons/fa";
 // importing image logo
 import LogoSVG from "../../../../../public/images/icons/Logo";
 
@@ -23,7 +25,7 @@ const Header = ({headerRef}) => {
   // Reference for color palette container
   const paletteRef = useRef(null); 
   
-  // const { darkMode, toggleDarkMode } = useTheme();
+  // what is comming from themeSlice
   const dispatch = useDispatch();
   const darkMode = useSelector( state => state.theme.darkMode)
 
@@ -133,16 +135,29 @@ const Header = ({headerRef}) => {
         <LogoSVG darkMode={darkMode} />
       </Link>
 
-      <div
-        onClick={() => dispatch(toggleDarkMode())}
-        className={`${styles.div_icon} p-4 rounded-full transition-all cursor-pointer
-        hover:bg-primary bg-bgHover`}
-      >
-        {darkMode ? (
-          <IoSunny className={`${styles.icon} text-secondary`} />
-          ) : (
-          <IoMoonOutline className={`${styles.icon} text-secondary`} />
-        )}
+      <div className={`${styles.div_icon} flex flex-col gap-10`}>
+        <div
+          onClick={() => dispatch(toggleDarkMode())}
+          className={`p-4 rounded-full transition-all cursor-pointer
+          hover:bg-primary bg-bgHover`}
+        >
+          {darkMode ? (
+            <IoSunny className={`${styles.icon} text-secondary`} />
+            ) : (
+            <IoMoonOutline className={`${styles.icon} text-secondary`} />
+          )}
+        </div>
+        <div
+          onClick={() => dispatch(toggleSmallSidebar())}
+          className={`p-4 rounded-full transition-all cursor-pointer
+          hover:bg-primary bg-bgHover `}
+        >
+          <FaBars className={`${styles.icon} text-secondary`} />
+          {/* {isDivVisible && (
+            <div className="mt-4 p-2 bg-gray-600 rounded-md">
+            </div>
+          )} */}
+        </div>
       </div>
     </header>
   );

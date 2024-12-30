@@ -10,6 +10,11 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
+@media screen and (max-width: 768px) {
+    .skills{
+        margin-left: -55px;
+    }
+}
 @media screen and (max-width: 639px) {
     .tools{
         grid-template-columns: repeat(2, 1fr);

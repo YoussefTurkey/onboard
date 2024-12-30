@@ -3,3 +3,9 @@
         grid-column: 2 span;
     }
 }
+@media screen and (max-width: 768px) {
+    .contact{
+        width: calc(100% - 55px);
+        margin-right: 15%;
+    }
+}

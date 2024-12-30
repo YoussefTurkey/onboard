@@ -56,7 +56,7 @@ const message = data.sectionData.card
 
 const Testimonials = () => {
   return (
-    <section className={`mx-auto container my-10`}>
+    <section className={`${styles.testimonials} mx-auto container my-10`}>
       <Title data={data} />
 
       <Swiper 

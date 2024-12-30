@@ -1,9 +1,13 @@
 "use client";
 import { useRef } from "react";
+// importing components
+import dynamic from 'next/dynamic';
 // importing main components
-import Header from "./components/mainComponents/header/Header";
-import Footer from "./components/mainComponents/footer/Footer";
-import Sidebar from "./components/mainComponents/sidebar/Sidebar";
+const Header = dynamic(() => import('./components/mainComponents/header/Header'));
+const Footer = dynamic(() => import('./components/mainComponents/footer/Footer'));
+const Sidebar = dynamic(() => import('./components/mainComponents/sidebar/Sidebar'));
+const SmallSidebar = dynamic(() => import('./components/mainComponents/smallSidebar/page'));
+
 // importing Scss Files for styling
 import "./globals.scss";
 // importing Google-Fonts
@@ -49,6 +53,7 @@ export default function RootLayout({ children }) {
         >
           <Header headerRef={headerRef} />
           <Sidebar scrollToHeader={scrollToHeader} />
+          <SmallSidebar scrollToHeader={scrollToHeader} />
           {children}
           <Footer />
         </body>

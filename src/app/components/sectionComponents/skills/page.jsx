@@ -54,19 +54,19 @@ const data = {
 
 const Skills = () => {
   return (
-    <section className='mx-auto container' id='skills'>
+    <section className={`${styles.skills} mx-auto container`} id='skills'>
         <Title data={data} />
 
         <div className={`${styles.tools} grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-[10px] sm:gap-[20px] md:gap-[30px] my-10 md:mx-[85px] justify-items-center`}>
             {
-                tools.map( skill => {
-                    return(
-                        <div key={skill.id} className={`${styles.tool} flex flex-col items-center gap-[15px] border border-bgHover rounded-lg p-[40px] w-[250px] md:w-[100%] hover:border-primary transition-all`}>
-                            {skill.icon}
-                            <p className='font-[500] text-[18px] text-secondary'>{skill.name}</p>
-                        </div>
-                    )
-                })
+              tools.map( skill => {
+                return(
+                  <div key={skill.id} className={`${styles.tool} flex flex-col items-center gap-[15px] border border-bgHover rounded-lg p-[40px] w-[250px] md:w-[100%] hover:border-primary`}>
+                    {skill.icon}
+                    <p className='font-[500] text-[18px] text-secondary'>{skill.name}</p>
+                  </div>
+                )
+              })
             }
         </div>
     </section>

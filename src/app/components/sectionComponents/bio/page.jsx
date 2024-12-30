@@ -30,7 +30,7 @@ const data = {
 
 const Bio = () => {
   return (
-    <section className={`mx-auto container flex flex-col items-center my-40`} id='bio'>
+    <section className={`${styles.bio} mx-auto container flex flex-col items-center my-40`} id='bio'>
       <Title data={data} />
       <div className={`${styles.socials} flex items-center`}>
         <Link href={"/"} rel='preload'>

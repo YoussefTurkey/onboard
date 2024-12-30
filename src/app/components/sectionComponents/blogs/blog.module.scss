@@ -3,3 +3,9 @@
         grid-column: 2 span;
     }
 }
+@media screen and (max-width: 768px) {
+    .blogs{
+        width: calc(100% - 75px);
+        margin-right: 15%;
+    }
+}
