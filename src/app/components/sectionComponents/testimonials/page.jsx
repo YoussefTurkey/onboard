@@ -65,47 +65,36 @@ const Testimonials = () => {
           pagination={{
             clickable: true,
           }}
+          breakpoints= {{  
+            '425': {
+              slidesPerView: 1},
+            '767': {
+              slidesPerView: 1},
+            '1024': {
+              slidesPerView: 2
+            }
+          }}
           modules={[Pagination]} 
           className={`${styles.mySwiper} grid grid-col-1 lg:grid-cols-2 gap-5 my-5 mx-auto w-[80%]`}>
         {
-            message.map(msg => {
-                return(
-                  <SwiperSlide key={msg.id}
-                    className={`${styles.msg} flex flex-col items-center gap-y-3 bg-bgHover rounded-2xl p-[40px] cursor-grab`}>
-                      <div className='flex items-center justify-end gap-2 w-[100%]'>{msg.stars}</div>
-                      <p className='italic my-5 text-secondary'>{msg.message}</p>
-                      <div className={`${styles.person} flex items-start justify-start gap-x-3 w-[100%]`}>
-                        <Image src={msg.img} fetchPriority='low' width='50' height='50' alt={msg.name} loading='lazy' />
-                        <div className={`${styles.info}`}>
-                            <h4 className='text-secondary font-[500]'>{msg.name}</h4>
-                            <p className='text-secondary'>{msg.postion}</p>
-                        </div>
+          message.map(msg => {
+              return(
+                <SwiperSlide key={msg.id}
+                  className={`${styles.msg} flex flex-col items-center gap-y-3 bg-bgHover rounded-2xl p-[40px] cursor-grab`}>
+                    <div className='flex items-center justify-end gap-2 w-[100%]'>{msg.stars}</div>
+                    <p className='italic my-5 text-secondary'>{msg.message}</p>
+                    <div className={`${styles.person} flex items-start justify-start gap-x-3 w-[100%]`}>
+                      <Image src={msg.img} fetchPriority='low' width='50' height='50' alt={msg.name} loading='lazy' />
+                      <div className={`${styles.info}`}>
+                          <h4 className='text-secondary font-[500]'>{msg.name}</h4>
+                          <p className='text-secondary'>{msg.postion}</p>
                       </div>
-                  </SwiperSlide>
-                )
-            })
+                    </div>
+                </SwiperSlide>
+              )
+          })
         }
       </Swiper>
-
-      {/* <Swiper
-          slidesPerView={'auto'}
-          spaceBetween={30}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[Pagination]}
-          className="mySwiper"
-        >
-          <SwiperSlide>Slide 1</SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
-          <SwiperSlide>Slide 5</SwiperSlide>
-          <SwiperSlide>Slide 6</SwiperSlide>
-          <SwiperSlide>Slide 7</SwiperSlide>
-          <SwiperSlide>Slide 8</SwiperSlide>
-          <SwiperSlide>Slide 9</SwiperSlide>
-        </Swiper> */}
     </section>
   );
 };

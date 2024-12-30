@@ -1,17 +1,7 @@
-// @media screen and (max-width: 1440px) {
-//     .clientsNo{
-//         padding-left: 100px;
-//     }
-// }
-// @media screen and (max-width: 1024px) {
-//     .clientsNo{
-//         padding-left: 50px;
-//     }
-// }
 @media screen and (max-width: 425px) {
     .clientsNo{
         .imgs{
-            width: 10%;
+            // width: 10%;
             > img:not(:first-child){
                 margin-left: -30%;
             }
