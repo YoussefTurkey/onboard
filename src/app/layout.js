@@ -1,7 +1,6 @@
 "use client";
 import { useRef } from "react";
 // importing main components
-// import Header from "./components/header/Header";
 import Header from "./components/mainComponents/header/Header";
 import Footer from "./components/mainComponents/footer/Footer";
 import Sidebar from "./components/mainComponents/sidebar/Sidebar";

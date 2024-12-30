@@ -61,7 +61,7 @@ const Skills = () => {
             {
                 tools.map( skill => {
                     return(
-                        <div key={skill.id} className={`${styles.tool} flex flex-col items-center gap-[15px] border border-bgHover rounded-lg p-[40px] w-[250px] md:w-[100%]`}>
+                        <div key={skill.id} className={`${styles.tool} flex flex-col items-center gap-[15px] border border-bgHover rounded-lg p-[40px] w-[250px] md:w-[100%] hover:border-primary transition-all`}>
                             {skill.icon}
                             <p className='font-[500] text-[18px] text-secondary'>{skill.name}</p>
                         </div>

@@ -1,23 +1,15 @@
 // importing components
-import Bio from "./components/sectionComponents/bio/page";
-import Blogs from "./components/sectionComponents/blogs/page";
-import Contact from "./components/sectionComponents/contact/page";
-import Landing from "./components/sectionComponents/landing/page";
-import Portfolio from "./components/sectionComponents/portfolio/page";
-import Skills from "./components/sectionComponents/skills/page";
-import Testimonials from "./components/sectionComponents/testimonials/page";
+import dynamic from 'next/dynamic';
+
+const LandingPage = dynamic(() => import('./(pages)/landingPage/page'), {
+  loading: () => <p>Loading...</p>,
+});
 
 export default function Home() {
   return (
     <main className='min-h-screen'>
       <section>
-        <Landing />
-        <Bio />
-        <Skills />
-        <Portfolio />
-        <Testimonials />
-        <Contact />
-        <Blogs />
+        <LandingPage />
       </section>
     </main>
   );
