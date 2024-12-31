@@ -28,6 +28,13 @@
     }
   }
 }
+@media screen and (max-width: 425px) {
+  .footer{
+    width: calc(100% - 100px);
+    margin-right: 0;
+    margin-left: 3%;
+  }
+}
 @media screen and (max-width: 320px) {
   .footer {
     padding: 1.5rem 0;
